@@ -1,5 +1,5 @@
 import './App.css';
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, Box } from "@chakra-ui/react"
 import { extendTheme } from "@chakra-ui/react"
 import {
   BrowserRouter as Router,
@@ -21,18 +21,20 @@ const theme = extendTheme({ colors })
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <div className="App">
-        <Router>
-          <Switch>
-            <Route path="/recipe">
-              <Recipe />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Router>
-      </div>
+      <Box bg={'blue.900'}>
+        <div className="App">
+          <Router>
+            <Switch>
+              <Route path="/recipe">
+                <Recipe />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Router>
+        </div>
+      </Box>
     </ChakraProvider >
   );
 }

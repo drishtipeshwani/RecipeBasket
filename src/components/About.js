@@ -20,7 +20,7 @@ function About() {
                     spacing={{ base: 8, md: 8 }}
                     py={{ base: 15, md: 15 }}>
                     <Box shadow="lg" borderWidth="2px">
-                        <Heading fontSize="xl" fontWeight='bold' color={'gray.500'} marginTop={2}>Fast and Efficient</Heading>
+                        <Heading fontSize="xl" fontWeight='bolder' color={'gray.500'} marginTop={2}>Fast and Efficient</Heading>
                         <Text padding={2} color={'gray.500'} maxW={'3xl'} fontSize={'17px'}>This feature will make the user's shopping
                             experience more fast and efficient. They won't have to search for every ingredient separately
                             but will have the comfort of buying the recipe basket with all the contents in one place.</Text>

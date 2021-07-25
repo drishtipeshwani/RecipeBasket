@@ -33,7 +33,7 @@ function Home() {
                                 Basket
                             </Text>
                         </Heading>
-                        <Text color={'gray.600'} fontSize={'xl'} padding={2}>
+                        <Text color={'orange.400'} fontSize={'xl'} padding={2}>
                             Why search for different ingredients of your recipe separately
                             when you can buy them together like a basket. To provide a better shopping experience to its customers,
                             Walmart can introduce the concept of recipe baskets.

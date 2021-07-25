@@ -45,8 +45,8 @@ function Example() {
                     <Box zIndex="1" width="90%" position="absolute" height="100%" marginLeft={{ base: '0', sm: '3%' }}>
                         <Box
                             bgGradient={
-                                'radial(orange.600 1px, transparent 1px)'}
-                            backgroundSize="20px 20px"
+                                'radial(orange.400 1px, transparent 1px)'}
+                            backgroundSize="15px 15px"
                             opacity="1"
                             height="100%"
                         />
