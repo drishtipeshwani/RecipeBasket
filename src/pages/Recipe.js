@@ -17,15 +17,21 @@ import {
     Flex
 } from '@chakra-ui/react';
 import { useToast } from "@chakra-ui/react"
-
+import { useColorMode } from '@chakra-ui/color-mode';
 
 function Recipe() {
 
-    const toast = useToast()
+    const toast = useToast();
+    const { colorMode, toggleColorMode } = useColorMode();
 
     return (
         <div>
             <Box>
+                <Box align={'end'} marginTop={5}>
+                    <Button onClick={toggleColorMode}>
+                        Toggle {colorMode === "light" ? "Dark" : "Light"}
+                    </Button>
+                </Box>
                 <Stack
                     textAlign={'center'}
                     align={'center'}
