@@ -7,7 +7,7 @@ function Example() {
         <div>
             <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
                 <Heading
-                    fontWeight={600}>
+                    fontWeight={600} color={'white.500'}>
                     Glimpe of{' '}
                     <Text as={'span'} color={'orange.400'}>
                         the Idea
@@ -74,7 +74,7 @@ function Example() {
                     <Text fontSize="2xl" textAlign='center' marginTop={8}
                         _hover={{
                             color: "teal.500",
-                        }}><Link as={ReachLink} to="/recipe">Customise Your Basket</Link></Text>
+                        }}><Link as={ReachLink} to="/recipe" color={'white.500'}>Customise Your Basket</Link></Text>
                 </Box>
             </Box>
         </div>

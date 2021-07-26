@@ -34,7 +34,7 @@ function Recipe() {
                     <Heading
                         fontWeight={600}
                         fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-                        lineHeight={'110%'} textAlign='center'>
+                        lineHeight={'110%'} textAlign='center' color={'white.500'}>
                         Pancakes{' '}
                         <Text as={'span'} color={'orange.400'}>
                             Recipe
@@ -56,7 +56,7 @@ function Recipe() {
                     </Link>
                 </Stack>
                 <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-                    <Heading fontSize={'3xl'}>User's{' '}<Text as={'span'} color={'orange.400'}>
+                    <Heading fontSize={'3xl'} color={'white.500'}>User's{' '}<Text as={'span'} color={'orange.400'}>
                         Choice Quiz
                     </Text></Heading>
                     <Flex shadow="lg" borderWidth="2px" padding={2} maxW={'8xl'} flexDirection='column'>
@@ -65,31 +65,31 @@ function Recipe() {
                         </Text>
                         <div id="quiz">
                             <FormControl as="fieldset" margin={2}>
-                                <FormLabel as="legend">Favorite Syrup :</FormLabel>
+                                <FormLabel as="legend" color={'white.500'}>Favorite Syrup :</FormLabel>
                                 <RadioGroup defaultValue="maple" marginBottom={3}>
                                     <HStack spacing="24px">
-                                        <Radio value="maple">Maple Syrup</Radio>
-                                        <Radio value="blueberry">Blueberry Syrup</Radio>
-                                        <Radio value="chocolate">Chocolate Syrup</Radio>
-                                        <Radio value="null">No syrup</Radio>
+                                        <Radio value="maple" color={'white.500'}>Maple Syrup</Radio>
+                                        <Radio value="blueberry" color={'white.500'}>Blueberry Syrup</Radio>
+                                        <Radio value="chocolate" color={'white.500'}>Chocolate Syrup</Radio>
+                                        <Radio value="null" color={'white.500'}>No syrup</Radio>
                                     </HStack>
                                 </RadioGroup>
-                                <FormLabel as="legend">Favorite Pancake Fruits Topping :</FormLabel>
+                                <FormLabel as="legend" color={'white.500'}>Favorite Pancake Fruits Topping :</FormLabel>
                                 <RadioGroup defaultValue="berry" marginBottom={3}>
                                     <HStack spacing="24px">
-                                        <Radio value="berry">Fresh Berries</Radio>
-                                        <Radio value="banana">Bananas</Radio>
-                                        <Radio value="apples">Apples</Radio>
-                                        <Radio value="null">No Fruit toppings</Radio>
+                                        <Radio value="berry" color={'white.500'}>Fresh Berries</Radio>
+                                        <Radio value="banana" color={'white.500'}>Bananas</Radio>
+                                        <Radio value="apples" color={'white.500'}>Apples</Radio>
+                                        <Radio value="null" color={'white.500'}>No Fruit toppings</Radio>
                                     </HStack>
                                 </RadioGroup>
-                                <FormLabel as="legend">Favorite Extra Pancake Toppings :</FormLabel>
+                                <FormLabel as="legend" color={'white.500'}>Favorite Extra Pancake Toppings :</FormLabel>
                                 <RadioGroup defaultValue="nutella" marginBottom={3}>
                                     <HStack spacing="24px">
-                                        <Radio value="nutella">Nutella</Radio>
-                                        <Radio value="butter">Peanut Butter</Radio>
-                                        <Radio value="nuts">Nuts</Radio>
-                                        <Radio value="null">No extra toppings</Radio>
+                                        <Radio value="nutella" color={'white.500'}>Nutella</Radio>
+                                        <Radio value="butter" color={'white.500'}>Peanut Butter</Radio>
+                                        <Radio value="nuts" color={'white.500'}>Nuts</Radio>
+                                        <Radio value="null" color={'white.500'}>No extra toppings</Radio>
                                     </HStack>
                                 </RadioGroup>
                             </FormControl>
@@ -119,7 +119,7 @@ function Recipe() {
                         align={'center'}
                         spacing={{ base: 8, md: 8 }}
                         py={{ base: 20, md: 20 }}>
-                        <Heading fontSize={'3xl'}>Breif{' '}<Text as={'span'} color={'orange.400'}>
+                        <Heading fontSize={'3xl'} color={'white.500'}>Breif{' '}<Text as={'span'} color={'orange.400'}>
                             Summary
                         </Text></Heading>
                         <Box shadow="lg" borderWidth="2px">
