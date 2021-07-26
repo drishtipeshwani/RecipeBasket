@@ -16,22 +16,15 @@ import {
     Container,
     Flex
 } from '@chakra-ui/react';
-import { useToast } from "@chakra-ui/react"
-import { useColorMode } from '@chakra-ui/color-mode';
+import { useToast } from "@chakra-ui/react";
 
 function Recipe() {
 
     const toast = useToast();
-    const { colorMode, toggleColorMode } = useColorMode();
 
     return (
         <div>
-            <Box>
-                <Box align={'end'} marginTop={5}>
-                    <Button onClick={toggleColorMode}>
-                        Toggle {colorMode === "light" ? "Dark" : "Light"}
-                    </Button>
-                </Box>
+            <Box overflowX='scroll'>
                 <Stack
                     textAlign={'center'}
                     align={'center'}
@@ -63,8 +56,8 @@ function Recipe() {
                 </Stack>
                 <Stack textAlign={'center'}
                     align={'center'}
-                    spacing={{ base: 8, md: 8 }}
-                    py={{ base: 12, md: 12 }}>
+                    spacing={{ base: 4, md: 4 }}
+                    py={{ base: 10, md: 10 }}>
                     <Heading fontSize={'3xl'} color={'white.500'}>User's{' '}<Text as={'span'} color={'orange.400'}>
                         Choice Quiz
                     </Text></Heading>
