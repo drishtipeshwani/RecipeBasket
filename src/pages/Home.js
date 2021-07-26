@@ -13,12 +13,21 @@ import {
 import header from '../images/header.jpg'
 import About from '../components/About'
 import Example from '../components/Example'
+import { useColorMode } from '@chakra-ui/color-mode';
 
 function Home() {
+
+    const { colorMode, toggleColorMode } = useColorMode()
+
     return (
         <div>
             <div className="header">
                 <Container maxW={'5xl'}>
+                    <Box align={'end'} marginTop={5}>
+                        <Button onClick={toggleColorMode}>
+                            Toggle {colorMode === "light" ? "Dark" : "Light"}
+                        </Button>
+                    </Box>
                     <Stack
                         textAlign={'center'}
                         align={'center'}
@@ -62,16 +71,7 @@ function Home() {
                             </Link>
                         </Stack>
                         <Center marginTop={6}>
-                            <Image src={header} alt="header" w="601px" h="301px" objectFit='fill'></Image>
-                            <Box zIndex="-1" width="650px" position="absolute" height="350px">
-                                <Box
-                                    bgGradient={
-                                        'radial(orange.600 1px, transparent 1px)'}
-                                    backgroundSize="11px 11px"
-                                    opacity="1"
-                                    height="100%"
-                                />
-                            </Box>
+                            <Image src={header} alt="header" width="601px" maxH="301px" objectFit='fill'></Image>
                         </Center>
                     </Stack>
                 </Container>

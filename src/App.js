@@ -20,8 +20,8 @@ const theme = extendTheme({ colors })
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <Box bg={'blue.900'}>
+    <ChakraProvider theme={theme} width={'100%'}>
+      <Box>
         <div className="App">
           <Router>
             <Switch>

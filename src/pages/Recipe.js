@@ -55,19 +55,22 @@ function Recipe() {
                         </Button>
                     </Link>
                 </Stack>
-                <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
+                <Stack textAlign={'center'}
+                    align={'center'}
+                    spacing={{ base: 8, md: 8 }}
+                    py={{ base: 12, md: 12 }}>
                     <Heading fontSize={'3xl'} color={'white.500'}>User's{' '}<Text as={'span'} color={'orange.400'}>
                         Choice Quiz
                     </Text></Heading>
-                    <Flex shadow="lg" borderWidth="2px" padding={2} maxW={'8xl'} flexDirection='column'>
-                        <Text color={'gray.500'} fontSize={'25px'}>
+                    <Box shadow="lg" borderWidth="2px" padding={2} flexDirection='column'>
+                        <Text color={'gray.500'} fontSize={'2xl'}>
                             Select your preferences
                         </Text>
                         <div id="quiz">
                             <FormControl as="fieldset" margin={2}>
                                 <FormLabel as="legend" color={'white.500'}>Favorite Syrup :</FormLabel>
                                 <RadioGroup defaultValue="maple" marginBottom={3}>
-                                    <HStack spacing="24px">
+                                    <HStack spacing='22px'>
                                         <Radio value="maple" color={'white.500'}>Maple Syrup</Radio>
                                         <Radio value="blueberry" color={'white.500'}>Blueberry Syrup</Radio>
                                         <Radio value="chocolate" color={'white.500'}>Chocolate Syrup</Radio>
@@ -112,7 +115,7 @@ function Recipe() {
                                 Submit
                             </Button>
                         </div>
-                    </Flex>
+                    </Box>
                 </Stack>
                 <div id="footer">
                     <Stack textAlign={'center'}
